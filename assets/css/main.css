@@ -2410,62 +2410,17 @@ html {
   overflow: hidden;
 }
 
-/* Live Markets styling */
-#live-markets {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-#live-markets h2 {
-  margin-bottom: 15px;
-}
-
-#live-markets .tradingview-widget-container,
-#live-markets iframe {
-  max-width: 100%;
-  overflow: hidden;
-}
-
+/* Live Markets Section Styling */
 #live-markets {
   width: 100%;
   padding: 20px 0;
+  margin: 40px 0;
   background: #f8f8f8; /* optional for contrast */
 }
 
 #live-markets .inner {
-  max-width: 1200px;
+  max-width: 1000px; /* controls widget and content width */
   margin: 0 auto;
-}
-
-#live-markets h2 {
-  margin-bottom: 15px;
-}
-
-#live-markets .tradingview-widget-container,
-#live-markets iframe {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-#live-markets {
-  margin: 40px 0;
-}
-
-#live-markets h2 {
-  margin-bottom: 20px;
-}
-
-#live-markets .tradingview-widget-container,
-#live-markets iframe {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  display: block;
-}
-
-#live-markets {
-  margin: 40px 0;
 }
 
 #live-markets h2 {
@@ -2478,4 +2433,5 @@ html {
   max-width: 1000px;
   margin: 0 auto;
   display: block;
+  overflow: hidden; /* prevents widget from breaking layout */
 }
