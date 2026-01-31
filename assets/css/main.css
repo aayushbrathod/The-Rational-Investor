@@ -2271,3 +2271,41 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+/* ===============================
+   Homepage title image styling
+   =============================== */
+
+.title-with-image {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  margin-bottom: 3em;
+}
+
+.title-with-image .text {
+  flex: 1;
+}
+
+.title-with-image .image {
+  width: 460px; /* controls image size */
+  flex-shrink: 0;
+}
+
+.title-with-image .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Mobile behaviour */
+@media screen and (max-width: 980px) {
+  .title-with-image {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .title-with-image .image {
+    width: 100%;
+  }
+}
