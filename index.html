@@ -16,7 +16,6 @@
   			window.dataLayer = window.dataLayer || [];
   			function gtag(){dataLayer.push(arguments);}
   			gtag('js', new Date());
-
   			gtag('config', 'G-YVRJZFPKKZ');
 		</script>
 
@@ -62,11 +61,34 @@
 							</ul>
 						</div>
 
-						<!-- RIGHT-SIDE HOMEPAGE IMAGE -->
 						<span class="image object">
 							<img src="images/mainphotoHomepage.png" alt="Homepage Image">
 						</span>
 					</section>
+
+					<!-- LIVE MARKETS SECTION (ADDED) -->
+					<section id="live-markets">
+						<header class="major">
+							<h2>Live Markets</h2>
+						</header>
+
+						<div class="tradingview-widget-container">
+							<script type="text/javascript"
+								src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
+								async>
+							{
+							  "colorTheme": "light",
+							  "dateRange": "1D",
+							  "showChart": true,
+							  "locale": "en",
+							  "market": "us",
+							  "width": "100%",
+							  "height": "450"
+							}
+							</script>
+						</div>
+					</section>
+					<!-- END LIVE MARKETS SECTION -->
 
 					<!-- Featured Articles Section -->
 					<section id="featured-articles">
@@ -116,107 +138,3 @@
 							</article>
 						</div>
 					</section>
-
-					<!-- Latest Posts Section -->
-					<section id="latest-posts">
-						<header class="major">
-							<h2>Latest Posts</h2>
-						</header>
-						<div class="posts">
-							<article>
-								<a href="article1.html" class="image"><img src="images/article1.png" alt="Market Crash Analysis 2025" /></a>
-								<h3>Market Crash Analysis: 2025</h3>
-								<p>An in-depth look at the causes of recent market crashes and their effects on investors.</p>
-								<ul class="actions">
-									<li><a href="article1.html" class="button">Read Full Article</a></li>
-								</ul>
-							</article>
-							<article>
-								<a href="article2.html" class="image"><img src="images/article2.png" alt="Tech Stock Boom" /></a>
-								<h3>Tech Stock Boom: Tesla &amp; Apple</h3>
-								<p>Examining the rapid growth of Tesla and Apple shares and what it means for investors.</p>
-								<ul class="actions">
-									<li><a href="article2.html" class="button">Read Full Article</a></li>
-								</ul>
-							</article>
-							<article>
-								<a href="article3.html" class="image"><img src="images/article3.png" alt="Cryptocurrency Trends" /></a>
-								<h3>Cryptocurrency Trends</h3>
-								<p>Analysing recent fluctuations in Bitcoin and Ethereum and their impact on the crypto market.</p>
-								<ul class="actions">
-									<li><a href="article3.html" class="button">Read Full Article</a></li>
-								</ul>
-							</article>
-							<article>
-								<a href="article4.html" class="image"><img src="images/article4.png" alt="Interest Rates and Stocks" /></a>
-								<h3>How Interest Rates Affect Stocks</h3>
-								<p>Understanding how recent interest rate changes have influenced stock prices and investor strategy.</p>
-								<ul class="actions">
-									<li><a href="article4.html" class="button">Read Full Article</a></li>
-								</ul>
-							</article>
-						</div>
-					</section>
-
-					<!-- Newsletter Signup Section -->
-					<section id="newsletter">
-						<header class="major">
-							<h2>Sign Up for Newsletter</h2>
-							<p>Get the latest market insights delivered straight to your inbox.</p>
-						</header>
-
-						<form method="post">
-							<div class="fields">
-								<div class="field half">
-									<label for="newsletter-name">Name</label>
-									<input type="text" name="newsletter-name" id="newsletter-name" placeholder="Your Name" />
-								</div>
-								<div class="field half">
-									<label for="newsletter-email">Email</label>
-									<input type="email" name="newsletter-email" id="newsletter-email" placeholder="Your Email" />
-								</div>
-							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Subscribe" class="button primary" /></li>
-								<li><input type="reset" value="Reset" class="button" /></li>
-							</ul>
-							<p><em>Note: This form is currently static and won’t actually send emails.</em></p>
-						</form>
-					</section>
-
-				</div> <!-- close inner -->
-			</div> <!-- close main -->
-
-			<!-- Sidebar -->
-			<div id="sidebar">
-				<div class="inner">
-
-					<!-- Sidebar Menu -->
-					<nav id="menu">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#featured-articles">Featured Articles</a></li>
-							<li><a href="#latest-posts">Latest Posts</a></li>
-							<li><a href="#newsletter">Sign Up for Newsletter</a></li>
-							<li><a href="contact.html">Get in Touch</a></li>
-						</ul>
-					</nav>
-
-					<!-- Keep other sidebar content if needed, like mini-posts or contact info -->
-
-				</div>
-			</div>
-
-		</div> <!-- close wrapper -->
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
-
-
