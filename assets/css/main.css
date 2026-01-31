@@ -2448,3 +2448,18 @@ html {
   overflow: hidden;
 }
 
+#live-markets {
+  margin: 40px 0;
+}
+
+#live-markets h2 {
+  margin-bottom: 20px;
+}
+
+#live-markets .tradingview-widget-container,
+#live-markets iframe {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
