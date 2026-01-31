@@ -2327,3 +2327,42 @@ button,
   width: 100% !important;
   height: auto !important;
 }
+
+/* Latest Posts - images above text */
+.posts article .image {
+  display: block;       /* ensures block-level */
+  margin: 0 0 1em 0;   /* space below the image */
+  width: 100%;          /* full width of the article box */
+  border-radius: 5px;   /* optional rounded corners */
+}
+
+.posts article .image img {
+  width: 100%;          /* make image fill its container */
+  height: auto;         /* maintain aspect ratio */
+  display: block;
+}
+
+/* Latest Posts - spacing between articles */
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* space between each post */
+  margin: 0 0 2rem 0;
+}
+
+.posts article {
+  flex: 1 1 calc(33.333% - 1.33rem); /* 3 posts per row with spacing */
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1280px) {
+  .posts article {
+    flex: 1 1 calc(50% - 1rem); /* 2 posts per row on medium screens */
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .posts article {
+    flex: 1 1 100%; /* 1 post per row on small screens */
+  }
+}
