@@ -2309,3 +2309,21 @@ button,
     width: 100%;
   }
 }
+
+.title-with-image {
+  display: flex !important;
+  align-items: center !important;
+  gap: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.title-with-image .image {
+  display: block !important;
+  width: 500px !important;
+}
+
+.title-with-image .image img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+}
