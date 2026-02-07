@@ -190,7 +190,12 @@
     <p>Get the latest market insights delivered straight to your inbox.</p>
   </header>
 
-  <form action="https://formspree.io/f/xjgevrjb" method="POST">
+  <form 
+    action="https://formspree.io/f/xjgevrjb" 
+    method="POST"
+    accept-charset="UTF-8"
+    id="newsletter-form"
+  >
     <div class="fields">
       <div class="field half">
         <label for="newsletter-name">Name</label>
@@ -214,25 +219,19 @@
       </div>
     </div>
 
+    <!-- Honeypot for spam protection -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <!-- Redirect to thank-you page after submission -->
+    <input type="hidden" name="_next" value="https://aayushbrathod.github.io/The-Rational-Investor/thank-you.html">
+
     <ul class="actions">
       <li>
         <input type="submit" value="Subscribe" class="button primary" />
-	  </li>
+      </li>
     </ul>
   </form>
 </section>
-					<p id="success-msg" style="display:none; color:#1e90ff;">
-  ✅ Thanks for signing up!
-</p>
-
-<script>
-  const form = document.querySelector(".signup-form");
-  const msg = document.getElementById("success-msg");
-
-  form.addEventListener("submit", () => {
-    msg.style.display = "block";
-  });
-</script>
 			<!-- Sidebar -->
 			<div id="sidebar">
 				<div class="inner">
@@ -263,6 +262,7 @@
 
 	</body>
 </html>
+
 
 
 
