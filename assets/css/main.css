@@ -2514,3 +2514,18 @@ html {
 .btn-link:hover {
   background-color: #0d6efd;
 }
+
+/* Fix sidebar being hidden behind content */
+#sidebar {
+  position: fixed;
+  z-index: 10000;
+}
+
+/* Prevent sections from covering sidebar */
+#main,
+#banner,
+#live-markets,
+.inner {
+  position: relative;
+  z-index: 1;
+}
