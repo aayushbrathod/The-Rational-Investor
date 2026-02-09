@@ -2588,3 +2588,71 @@ html {
 body {
 	padding-top: 4.5em;
 }
+
+/* Top navigation (modern, full-width, professional) */
+#top-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #1e1e1e; /* dark modern background */
+	color: #ffffff;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	z-index: 10001;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#top-nav .nav-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0.75em 2em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#top-nav .nav-logo {
+	font-weight: 700;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+
+#top-nav .nav-links {
+	display: flex;
+	align-items: center;
+}
+
+#top-nav .nav-links a {
+	margin-left: 2em;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+#top-nav .nav-links a::after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background: #f56a6a; /* accent color */
+	left: 0;
+	bottom: -4px;
+	transition: width 0.3s ease;
+}
+
+#top-nav .nav-links a:hover::after {
+	width: 100%;
+}
+
+#top-nav .nav-links a:hover {
+	color: #f56a6a;
+}
+
+/* Ensure content does not hide behind nav */
+body {
+	padding-top: 60px; /* height of nav */
+}
